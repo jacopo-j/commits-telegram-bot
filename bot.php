@@ -51,7 +51,7 @@ function send_message($text, $keyboard) {
 }
 
 
-$post_data = file_get_contents('php://input');
+$post_data = $_POST["payload"];
 
 if (! $post_data) {
     die();
