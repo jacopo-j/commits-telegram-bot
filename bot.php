@@ -60,7 +60,7 @@ if (! $post_data) {
 $signature = hash_hmac("sha1", $post_data, HMAC_SECRET);
 
 $required_data = array(
-	'ref' => 'refs/heads/master',
+	'ref' => 'refs/heads/main',
 	'repository' => array(
 		'full_name' => REPOSITORY_NAME,
 	),
